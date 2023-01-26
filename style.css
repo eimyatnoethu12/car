@@ -1,42 +1,97 @@
 * {
     padding: 0;
     margin: 0;
+
+}
+
+body {
+    background: linear-gradient(180deg, rgb(3, 19, 78) 35%, green 0%);
+    background-attachment: fixed;
 }
 
 .gameContainer {
-    background: linear-gradient(180deg, rgb(3, 19, 78) 35%, green 0%);
     width: 100%;
     height: 100vh;
-    border: 1px solid black;
     margin: auto;
-    /* display: none; */
+    position: fixed;
+    top: 120px;
+}
+
+.bg-color {
+    background-color: yellow;
 }
 
 #car {
     width: 100px;
-    height: 60px;
-    background-image: url(giphy.webp);
+    height: 131px;
+    background-image: url(people.gif);
     background-size: 100%;
     position: relative;
     top: 143px;
     left: 120px;
-    filter: drop-shadow(1px 8px 4px rgba(2, 2, 41, 0.68));
+    filter: drop-shadow(1px 18px 4px rgba(2, 2, 41, 0.68));
 }
 
 #tree {
     width: 100px;
-    height: 100px;
-    background-image: url(deciduous-tree-nature.gif);
+    height: 60px;
+    background-image: url(ghost.gif);
     background-size: 100%;
     position: relative;
-    top: 50px;
+    top: 70px;
     left: 1000px;
-    animation: Cactus-Block 2s infinite linear;
-    filter: drop-shadow(1px 8px 4px rgba(2, 2, 41, 0.68));
+    animation: Cactus-Block 5s infinite linear;
+    /* filter: drop-shadow(1px 8px 4px rgba(2, 2, 41, 0.68)); */
 }
 
 .Jump {
-    animation: Jump 0.5s Linear;
+    animation: Jump 1.3s Linear;
+}
+
+
+.home2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(derelict-house-travel.gif);
+    background-size: 100%;
+    position: relative;
+    top: -300px;
+    left: 1600px;
+    ;
+    animation: Cactus-Block 6s infinite linear;
+    z-index: -1;
+}
+
+.tree2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(tree-oatmeal.gif);
+    background-size: 100%;
+    position: relative;
+    top: -200px;
+    left: 1600px;
+    animation: Cactus-Block 5s infinite linear;
+    z-index: -1;
+}
+
+.home {
+    width: 100px;
+    height: 120px;
+    background-image: url(home-flowers.gif);
+    background-size: 100%;
+    position: relative;
+    top: -90px;
+    left: 1600px;
+    animation: Cactus-Block 4s infinite linear;
+    z-index: -10;
+}
+
+#load {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    color: brown;
 }
 
 @keyframes Jump {
@@ -45,32 +100,32 @@
     }
 
     20% {
-        Top: 123px;
+        Top: 100px;
     }
 
     30% {
-        top: 103px;
+        top: 60px;
     }
 
     40% {
-        Top: 83x;
+        Top: 33x;
     }
 
     50% {
-        Top: 63px;
+        Top: -13px;
     }
 
     60% {
-        top: 83px;
+        top: 33px;
         ;
     }
 
     70% {
-        top: 103px;
+        top: 60px;
     }
 
     80% {
-        top: 123px;
+        top: 100px;
     }
 
     90% {
@@ -82,63 +137,6 @@
     }
 }
 
-.tree1 {
-    width: 100%;
-    height: 100px;
-    background-image: url(tree-happy.gif);
-    background-size: 10%;
-    position: relative;
-    top: -10px;
-    left: 100px;
-    /* border-radius: 100%; */
-    animation: Cactus-Block 3s infinite linear;
-}
-
-.ghost {
-    width: 100px;
-    height: 60px;
-    background-image: url(ghost.gif);
-    background-size: 100%;
-    position: relative;
-    top: 143px;
-    left: 120px;
-    animation: Jump 4s infinite Linear;
-}
-
-.tree2 {
-    width: 100%;
-    height: 130px;
-    background-image: url(tree-happy.gif);
-    background-size: 10%;
-    position: relative;
-    top: -20px;
-    left: 500px;
-    animation: Cactus-Block 3s infinite linear;
-}
-
-.stone {
-    width: 100%;
-    height: 100px;
-    background-image: url(tree-happy.gif);
-    background-size: 10%;
-    position: relative;
-    top: -10px;
-    left: 300px;
-    animation: Cactus-Block 3s infinite linear;
-}
-
-.stone2 {
-    width: 100%;
-    height: 100px;
-    background-image: url(tree-happy.gif);
-    background-size: 10%;
-    position: relative;
-    top: -80px;
-    left: 200px;
-    animation: Cactus-Block 3s infinite linear;
-}
-
-
 @keyframes Cactus-Block {
     0% {
         right: 600px;
@@ -147,26 +145,4 @@
     100% {
         left: -10px;
     }
-}
-
-#load {
-    /* font-size: 30px; */
-    width: 100%;
-    height: 100vh;
-    margin: auto 10px;
-    z-index: 100;
-    position: fixed;
-    color: brown;
-}
-
-.text {
-    width: 100%;
-    font-size: 15px;
-    top: 200px;
-    left: 250px;
-    /* height: 100vh; */
-    z-index: 200;
-    position: relative;
-    margin: autp 10px;
-    /* padding: 12px; */
 }
