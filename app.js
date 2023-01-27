@@ -2,7 +2,8 @@ const Dino = document.getElementById("car");
 const Tree = document.getElementById("tree");
 var load = document.getElementById('load');
 var text = document.getElementById('text-container');
-
+alert("Instruction: click anywhere to Jump the ghost");
+alert("Start Game?(ဂိမ်းစတင်ပါ။)");
 Dino.addEventListener("click", Jump);
 function Jump() {
     Dino.classList.toggle("Jump");
